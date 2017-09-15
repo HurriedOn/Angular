@@ -1,11 +1,29 @@
 # Angular
-# AngularApp
-
+## 安装
+开发环境：node 6.9.x 和 npm 3.x.x 以上的版本.
+然后全局安装 Angular CLI：
+```bash
+$ npm install -g @angular/cli
+```
+## 创建项目
+```bash
+$ ng new my-app
+```
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
-## Development server
+## 启动开发服务器
+进入项目目录，并启动服务器。
+```bash
+ng serve --open
+```
+ng serve命令会启动开发服务器，监听文件变化，并在修改这些文件时重新构建此应用。
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+使用--open（或-o）参数可以自动打开浏览器并访问http://localhost:4200/ 。
+
+您可以使用两个命令行选项配置开发服务器使用的默认HTTP主机和端口：
+```bash
+ng serve --host 0.0.0.0 --port 4201
+```
 
 ## Code scaffolding
 
